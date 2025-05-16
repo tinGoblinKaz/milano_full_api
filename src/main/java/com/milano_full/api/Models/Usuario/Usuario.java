@@ -1,8 +1,8 @@
 package com.milano_full.api.Models.Usuario;
 
-import com.milano_full.api.Models.Endereco.Endereco;
+// import com.milano_full.api.Models.Endereco.Endereco;
 
-import jakarta.persistence.Embedded;
+// import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -24,6 +24,6 @@ public class Usuario {
     private String senha;
 
 
-    @Embedded
-    private Endereco endereco;
+    // @Embedded
+    // private Endereco endereco;
 }

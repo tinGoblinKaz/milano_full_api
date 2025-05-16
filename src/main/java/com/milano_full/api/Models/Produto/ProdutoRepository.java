@@ -1,7 +1,7 @@
-package com.milano_full.api.Models.Produto;
+// package com.milano_full.api.Models.Produto;
 
 
-import org.springframework.data.jpa.repository.JpaRepository;
+// import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProdutoRepository extends JpaRepository<Produto, Long> {
-}
+// public interface ProdutoRepository extends JpaRepository<Produto, Long> {
+// }
