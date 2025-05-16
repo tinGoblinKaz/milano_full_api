@@ -1,5 +1,8 @@
 package com.milano_full.api.Models.Usuario;
 
+import com.milano_full.api.Models.Endereco.Endereco;
+
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +13,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,4 +22,8 @@ public class Usuario {
     private String sobrenome;
     private String email;
     private String senha;
+
+
+    @Embedded
+    private Endereco endereco;
 }

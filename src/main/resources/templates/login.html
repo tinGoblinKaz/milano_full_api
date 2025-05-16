@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login do Usuário</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+  <div class="container">
+    <h2>Cadastro de Usuário</h2>
+    <form th:object="${usuario}" th:action="@{/login}" method="post">
+      
+      <label for="email">Email:</label>
+      <input th:field="*{email}" id="email" name="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" th:field="*{senha}" id="senha" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
